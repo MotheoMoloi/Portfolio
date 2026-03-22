@@ -177,3 +177,125 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.details-section {
+    background-color: #ffffff;
+    padding: 100px 10%;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 100px;
+    max-width: 1200px;
+}
+
+.section-title {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: var(--primary-brand-color);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: var(--primary-brand-color);
+    margin-bottom: 50px;
+}
+
+.entry {
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.entry .date {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.entry .institution, 
+.entry .degree, 
+.entry .gpa {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+    .details-grid {
+        grid-template-columns: 1fr; 
+        gap: 50px;
+    }
+}
+
+/* footer */
+
+.site-footer {
+    background-color: #fff;
+    padding-top: 100px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10% 80px 10%;
+    position: relative;
+}
+
+.footer-heading {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.footer-socials {
+    text-align: left;
+}
+
+.footer-socials a {
+    color: #333;
+}
+
+.footer-right {
+    text-align: left;
+    color: #444;
+}
+
+.footer-btn {
+    background-color: var(--primary-brand-color);
+    color: white;
+    margin-top: 30px;
+}
+
+.scroll-top {
+    position: absolute;
+    right: 10%;
+    bottom: 80px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--primary-brand-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-brand-color);
+    text-decoration: none;
+}
+
+/* bottom bar */
+.footer-bottom-bar {
+    background-color: var(--primary-brand-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.8rem;
+    font-style: italic;
+}
